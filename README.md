@@ -1,7 +1,7 @@
 dcat-admin-sku 商品SKU
 ======
 
-![预览](https://github.com/jade-kun/sku/blob/master/1.png?raw=true)
+![预览](http://image.lalalove.net/images/sku.png)
 
 ## 安装
 ```bash
@@ -9,7 +9,7 @@ composer require zhy/dcat-admin-sku
 ```
 
 ## 配置
-
+    
 
 ### 数据库字段配置
 - 数据类型json
@@ -28,7 +28,7 @@ $form->sku('skuField','商品SKU');
 默认数据格式
 ```json
 {
-    "type": "many",// many多规格；single单规格
+    "type": "many",
     "attrs": {
         "CPU": ["两核","四核"],
         "内存": ["4G","8G","16G"]
