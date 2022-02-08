@@ -1,7 +1,7 @@
 dcat-admin-sku 商品SKU
 ======
 
-![预览](http://image.lalalove.net/images/sku.png)
+![](http://image.lalalove.net/images/sku.png)
 
 ## 安装
 ```bash
