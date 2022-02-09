@@ -109,7 +109,7 @@
             let td = $(this).parent();
             td.find('input').val('');
             td.find('.Js_sku_upload').css('background-image','none');
-            td.find('.Js_sku_upload').append("<i class=\"fa fa-file-photo-o\"></i>");
+            td.find('.Js_sku_upload').html("<i class=\"fa fa-file-photo-o\"></i>");
             _this.processSku();
         });
 
@@ -244,6 +244,9 @@
                             let sku_upload = tr.find('td[data-field="'+field+'"] .Js_sku_upload');
                             if(sku_upload.length) {
                                 sku_upload.css('background-image','url('+item_sku[field]+')');
+                                if (item_sku[field]){
+                                    sku_upload.find('i').remove();
+                                }
                             }
                         }
                     })
